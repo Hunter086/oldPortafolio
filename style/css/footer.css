@@ -1,0 +1,29 @@
+:root{
+    --background-footer: #34568B;
+    --text-color-footer: rgb(247, 202, 201);
+    --text-link-link: #d1d4d6;
+    --text-link-hover: #939597;
+}
+.footer{
+    background-color: var(--background-footer);
+    position: relative;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+.footer .footer-body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer .footer-body .footer-title{
+    width: 50%;
+}
+.footer .footer-body .footer-social{
+    width: 50%;
+    text-align: right;
+}
+.footer .footer-body .footer-social img,a{
+    width: 10%;
+}

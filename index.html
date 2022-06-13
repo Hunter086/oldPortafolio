@@ -19,6 +19,7 @@
         <link href="style/css/banner.css" rel="stylesheet">
         <link href="style/css/main.css" rel="stylesheet">
         <link href="style/css/cards.css" rel="stylesheet">
+        <link href="style/css/footer.css" rel="stylesheet">
 
       </head>
     <body>
@@ -116,35 +117,60 @@
             <section class="news">
               <article class="top-news">
                 <header>
-                    <h1>Introducción al CSS</h1>
-                    <p>En línea: <time pubdate="pubdate">01/01/2022</time></p>
+                    <h1>¿Quiénes somos?</h1>
+                    <p><time pubdate="2022-06-13">13/06/2022</time></p>
                 </header>
-                <img src="img/lucas.png" width="500px" alt="Foto del creador de la página">
-                <p>Hola soy  <b>Lucas</b>, creador de la web.<br>Este espacio fue creador para documentar y 
+                <div class="img">
+                  <img src="img/lucas.png" alt="Foto del creador de la página">
+                </div>
+                <p>Hola soy <b>Lucas</b> creador de la web <br>Este espacio fue creador para documentar y 
                   publicar contenido sobre el desarrollo de un Sitio Web. Su objetivo es ser un espacio colaborativo
-                y de apredisaje. </p>
+                y de aprendizaje. 
+                </p>
                 <footer>
                   <p><small>Licencia, Todo el contenido es de libre Lectura.</small></p>
                 </footer>
               </article>
               <!--Artículo sobre manzanas con variedad de manzanas-->
               <article>
-                <h1>Lorem ipsum</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <h1>Objetivos</h1>
+                <p id="art-obj">Aprender</p>
+                <p id="art-obj">Enseñar</p>
+                <p id="art-obj">Colaborar</p>
                 <section>
-                  <h2>Why do we use it?</h2>
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                  <h2>¿Por qué crear un sitio web?</h2>
+                  <p>La web es un espacio de acceso masivo, y para nosotros es inclusión de conocimiento. Lo que intentamos es agregar aún más conocimiento con el objetivo de aprender, enseñar y colaborar en la web.
+                  </p>
                 </section>
                 <section>
-                  <h2>Where does it come from?</h2>
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                  <h2>¿De dónde somos?</h2>
+                  <p>Nuestro espacio intenta llegar a todos lados y ser un foco de reunión sin importar el espacio físico donde este.</p>
                 </section>
               </article>
-            </section>  
+            </section>
+            <article class="bannner-article">
+              <section class="container">
+                <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="Nature" style="width:100%;">
+                <aside class="text-block">
+                  <h4>¿Quieres saber mas de nosotros?</h4>
+                  <a href="#"><p>Click Aquí</p></a>
+                </aside>
+              </section>
+            </article>
           </main>
           <!-- Footer -->
-          <footer style="background-color: cornflowerblue; height: 200px;">
-            
+          <footer class="footer">
+            <div class="footer-body">
+              <div class="footer-title">
+                <img src="img/lucas.png" alt="Logo de lucas">
+              </div>
+              <div class="footer-social">
+                  <a href="#"><img src="img/icon/icons8-youtube-play.svg" alt="enlaces a You Tube"></a>
+                  <a href="#"><img src="img/icon/icons8-facebook.svg" alt="enlaces a Facebook"></a>
+                  <a href="#"><img src="img/icon/icons8-linkedin.svg" alt="enlaces a Linken In"></a>
+                  <a href="#"><img src="img/icon/icons8-instagram-20.svg" alt="enlaces a Intagram"></a>
+              </div>
+            </div>
           </footer>
         <script>
           // scrollBanner
