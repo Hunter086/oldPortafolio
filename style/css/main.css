@@ -9,15 +9,15 @@ main .news{
     background-position: -5rem -25rem;
     background-size: 110% 900px;
     display: flex;
-    margin-top: 20px;
-    padding: 0px 10px 0px 10px; /* Arriba | Derecha | Abajo | Izquierda */
+    margin-top: 20px; /* Arriba | Derecha | Abajo | Izquierda */
+    padding: 10px 10px 10px 10px;
     flex-direction: row;
     justify-content: space-evenly;
     z-index: 1;
 }
 main .news article{
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 10px; /* Arriba | Derecha | Abajo | Izquierda */
+    padding: 50px; /* Arriba | Derecha | Abajo | Izquierda */
     text-align: justify;
 }
 main .news article h1{
@@ -26,7 +26,7 @@ main .news article h1{
     font-size: 2.5rem;
     text-transform: uppercase;
     margin-top: 0;
-    letter-spacing: .3rem;
+    letter-spacing: 0.3rem;
 }
 main .news article #art-obj{
     display: inline;
@@ -59,12 +59,64 @@ main .bannner-article .text-block {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     main .news{
+        background-position: 0rem 0rem;
+        background-size: 150% 1000px;
+        display: flex;
         flex-direction: column;
+        margin-top: 20px;
+     /* Arriba | Derecha | Abajo | Izquierda */
+        z-index: 1;
+    }
+    main .news article{
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 10px; /* Arriba | Derecha | Abajo | Izquierda */
+        text-align: justify;
+    }
+    main .news .top-news{
+        width: auto;
+    }
+    main .news .top-news .img img{
+        
+    }
+    
+    main .news article h1{
+        text-align: center;
+        color: aliceblue;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        margin-top: 0;
+        letter-spacing: 0.3rem;
+    }
+    main .news article #art-obj{
+        display: inline;
+        align-items: center;
+        margin-left: 8%;
+        text-transform: uppercase;
+        font-size: 1rem;
     }
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {}
+ @media only screen and (max-width: 600px) {
+    main .news article h1{
+        text-align: center;
+        color: aliceblue;
+        font-size: 1..25rem;
+        text-transform: uppercase;
+        margin-top: 0;
+        letter-spacing: 0.3rem;
+    }
+    main .news article #art-obj{
+        display: inline;
+        align-items: center;
+        margin-left: 8%;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    main .news .top-news .img img{
+        width: 30%;
+    }
+ }
  
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {}
