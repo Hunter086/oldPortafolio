@@ -17,7 +17,7 @@ main .news{
 }
 main .news article{
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 50px; /* Arriba | Derecha | Abajo | Izquierda */
+    padding: 10px;/* Arriba | Derecha | Abajo | Izquierda */
     text-align: justify;
 }
 main .news article h1{
@@ -33,7 +33,7 @@ main .news article #art-obj{
     align-items: center;
     margin-left: 16%;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 main .news .top-news{
     width: 40%;

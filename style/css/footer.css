@@ -7,12 +7,13 @@
 .footer{
     background-color: var(--background-footer);
     position: relative;
-    bottom:0;
+    bottom: 0;
     left: 0;
     width: 100%;
     z-index: 5;
 }
 .footer .footer-body{
+    background-color: var(--background-footer);
     display: flex;
     flex-direction: row;
     align-items: center;
