@@ -18,6 +18,9 @@
     border-radius: 20px;
     pointer-events: all;
   }
+  .card a{
+    text-decoration: none;
+  }
   .section-cards:hover > .card:not(:hover),.section-cards:active > .card:not(:active) {
     filter: brightness(0.2) saturate(0) contrast(0.5) blur(2px);
     -webkit-filter: brightness(0.2) saturate(0) contrast(0.5) blur(2px);
