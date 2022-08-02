@@ -69,8 +69,15 @@
             <section class="info">
                 <div class="tab">
                     <button class="tablinks" onclick="openCity(event, 'Doc1')" id="defaultOpen">Introducción HTML</button>
-                    <button class="tablinks" onclick="openCity(event, 'Doc2')"></button>
-                    <button class="tablinks" onclick="openCity(event, 'Doc3')"></button>
+                    <button class="tablinks" onclick="openCity(event, 'Doc2')">Estructura HTML</button>
+                    <button class="tablinks" onclick="openCity(event, 'Doc3')">Elementos</button>
+                    <button class="tablinks" onclick="openCity(event, 'Doc4')"><span>header</span> </button>
+                    <button class="tablinks" onclick="openCity(event, 'Doc4')"><span>main</span></button>
+                    <button class="tablinks" onclick="openCity(event, 'Doc4')"><span>section</span></button>
+                    <button class="tablinks" onclick="openCity(event, 'Doc4')"><span>article</span></button>
+                    <button class="tablinks" onclick="openCity(event, 'Doc4')"><span>footer</span></button>
+
+
                 </div>
                 
                 <div id="Doc1" class="tabcontent">
@@ -80,21 +87,58 @@
                     <p>"Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web.</p>
                     <p>HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido para mostrarlo en un navegador Web.</p>
                     <p>Ej:
-                        head, title, body, header, footer, article, section, p, div, span, img, aside, audio, canvas, datalist, details, embed, nav, output, progress, video, ul, ol, li
+                      &lt;head&gt;,  &lt;title&gt;,  &lt;body&gt;,  &lt;header&gt;,  &lt;footer&gt;,  &lt;article&gt;,  &lt;section&gt;,  &lt;p&gt;,  &lt;div&gt;,  &lt;span&gt;, 
+                      &lt;img&gt;,  &lt;aside&gt;,  &lt;audio&gt;,  &lt;canvas&gt;,  &lt;datalist&gt;,  &lt;details&gt;,  &lt;embed&gt;,  &lt;nav&gt;,  &lt;output&gt;,  
+                      &lt;progress&gt;,  &lt;video&gt;,  &lt;ul&gt;,  &lt;ol&gt;,  &lt;li&gt;
                     </p>
-                    <p>Elemento rodeado por "<" body ">"</p>
-                    <p>No distingue entre mayúsculas y minúsculas < title >, se puede escribir como < Title >, < TITLE >< /TITLE ></p>
+                    <p>Elemento rodeado por &lt;body&gt;</p>
+                    <p>No distingue entre mayúsculas y minúsculas &lt;title&gt;, se puede escribir como &ltTitle&gt;, &lt;TITLE&gt;, &lt;/TITLE&gt;(se considera una buena practica utilizar la primer opción)</p>
                 </div>
                 
-                <div id="Paris" class="tabcontent">
-                    <h3></h3>
-                    <p></p> 
+                <div id="Doc2" class="tabcontent">
+                    <h3 id="title">Estructura HTML</h3>
+                    <h4 id="subtitle">Esqueleto</h4>
+                    <pre>
+                      &lt;!DOCTYPE html&gt;
+                      &lt;html&gt;
+                        &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;title&gt;Mi pagina de prueba&lt;/title&gt;
+                        &lt;/head&gt;
+                      &lt;body&gt;
+                        &lt;img src="images/firefox-icon.png" alt="Mi imagen de prueba"&gt;
+                      &lt;/body&gt;
+                      &lt;/html&gt;
+                    </pre> 
                 </div>
                 
-                <div id="Tokyo" class="tabcontent">
-                    <h3></h3>
-                    <p></p>
-                </div>
+                <div id="Doc3" class="tabcontent">
+                    <h3 id="title">Elementos</h3>
+                    <h4 id="subtitle">Definición y uso</h4>
+                    <p>Todos los documentos HTML deben comenzar con una declaración del tipo  &lt;!DOCTYPE&gt;.
+                      Esta  declaración no es una etiqueta HTML. Es información para que el navegador interprete sobre que tipo de documento espera.</p>
+                      <p>Para HTML 5, su declaración es:</p>
+                      <p>&lt;!DOCTYPE html&gt;</p>
+                      <p>La etiqueta &lt;html&gt; representa la raíz de un documento HTML. La etiqueta html es el contenedor raiz del todos los elementos HTML(sin incluir &lt;!DOCTYPE&gt;)</p>
+                        <p>Para definir la etiqueta html es una buena practica incluir el atributo lang, para declarar el idioma de la página web.</p>
+                        <p>&lt;html lang="es"&gt; &lt;/html&gt;</p>
+                      <p>El &lt;head&gt;  es un contenedor de metadatos y se coloca entre la etiqueta &lt;html&gt; y la etiqueta &lt;body&gt;. Estos metadatos son datos relacionados al documento HTML 
+                        y no se muestran al usuario.</p>
+                      <p>Los sigientes elementos pertenecen al &lt;head&gt;</p>
+                      <pre>
+                        &lt;style&gt;
+                        &lt;title&gt;
+                        &lt;base&gt;
+                        &lt;meta&gt;
+                        &lt;script&gt;
+                        &lt;link&gt;
+                        &lt;noscript&gt;
+                      </pre>
+                      <p>El elemento &lt;body&gt; define el cuerpo del documento html. Este elemento contiene todo el contenido 
+                        HTML(encabezados, párrafos, titulos, imagenes, links, etc).</p>
+                      <p>Solo puede existir un &lt;body&gt; en todo el documento.</p>
+                      <p>&lt;body&gt; &lt;/body&gt;</p>
+                    </div>
             </section>
           </main>
           <!-- Footer -->

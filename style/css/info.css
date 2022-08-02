@@ -9,7 +9,7 @@
   float: left;
   border: 1px solid rgb(230, 230, 230);
   background-color: rgb(29, 42, 53);
-  width: 30%;
+  width: 15%;
   height: 80vh;
 }
 
@@ -22,10 +22,15 @@
   width: 100%;
   border: none;
   outline: none;
-  text-align: left;
+  text-align: justify;
   cursor: pointer;
   transition: 0.3s;
   font-size: 17px;
+}
+.tab span {
+  
+  margin-left: 1.75rem;
+
 }
 
 /* Change background color of buttons on hover */
@@ -42,10 +47,10 @@
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
+  /*border: 1px solid #ccc;*/
+  width: 85%;
   border-left: none;
-  height: 80vh;
+  height: auto;
 }
 .tabcontent #title{
     font-size: 2rem;
@@ -60,4 +65,8 @@
 .tabcontent p{
     font-size: 1.2rem;
     color: #ddd;
+}
+.tabcontent pre{
+  font-size: 1.2rem;
+  color: #ddd;
 }
