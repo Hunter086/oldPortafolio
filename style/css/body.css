@@ -4,3 +4,11 @@ body {
     margin: 0;
     padding: 0;
 }
+.markwater{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.markwater img{
+    width: 150px;
+}

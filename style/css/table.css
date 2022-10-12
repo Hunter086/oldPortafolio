@@ -1,3 +1,4 @@
+
 table{
     background: #55698a;
     margin-left: 10%;
@@ -6,6 +7,25 @@ table{
 td a{
     color: #2f5186;
 }
+table>tbody>tr:nth-child(odd)>td, 
+table>tbody>tr:nth-child(odd)>th {
+background-color: #2f5186;
+}
+table>tbody>tr:nth-child(odd)>td a, 
+table>tbody>tr:nth-child(odd)>th a{
+background-color: #2f5186;
+color: #ccc;
+}
+table>tbody>tr:nth-child(even)>td, 
+table>tbody>tr:nth-child(even)>th {
+background-color: #ccc;
+}
+table>thead>tr>th {
+    background-color: #eee;
+}
 #Doc4{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
     overflow-x:auto;
+    margin-bottom: 5%;
 }
