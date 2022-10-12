@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+    <head>
+        <title>Diseño Web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Hola soy Lucas, creador de la web.Este espacio fue creador para documentar y 
+        publicar contenido sobre el desarrollo de un Sitio Web. Su objetivo es ser un espacio colaborativo
+      y de apredisaje.">
+        <meta name="keywords" content="Diseño web, Estructura Html, CSS3, javascript, blog web"/>
+        <meta name="author" content="Lucas Bauducco" />
+        <meta name="copyright" content="Lucas Bauducco" />
+        <meta name="robots" content="index,follow" />
+        <meta http-equiv="expires" content="1000000"/>
+        <link href="https://hunter086.github.io/" rel="canonical">
+        <link href="../style/css/body.css" rel="stylesheet">
+        <link href="../style/css/header.css" rel="stylesheet">
+        <link href="../style/css/navbar.css" rel="stylesheet">
+        <link href="../style/css/css.css" rel="stylesheet">
+        <link href="../style/css/footer.css" rel="stylesheet">
+      </head>
+    <body>
+      <!--HEADER-->
+        <header class="header">
+          <div class="header-body">
+            <div class="header-contacto">
+              <span>
+                <a href="#">Contacto</a>
+              </span>
+            </div>
+            <div class="header-social">
+                <span><img src="../img/icon/circle.svg" alt="imagen circulo"></span>
+                <a href="#"><img src="../img/icon/icons8-youtube-play.svg"  alt="enlaces a You Tube"></a>
+                <a href="#"><img src="../img/icon/icons8-facebook.svg" alt="enlaces a Facebook"></a>
+                <a href="#"><img src="../img/icon/icons8-linkedin.svg" alt="enlaces a Linken In"></a>
+                <a href="#"><img src="../img/icon/icons8-instagram-20.svg" alt="enlaces a Intagram"></a>
+                <span><img src="../img/icon/circle.svg" alt="imagen circulo"></span>
+            </div>
+            <div class="header-traduction">
+              <span>
+                <a href="#">En</a>
+              </span>
+              <span>
+                |
+              </span>
+              <span>
+                <a href="#">Es</a>
+              </span>
+            </div>
+          </div>
+            <!--NAVBAR-->
+            <nav class="nav">
+              <div class="nav-title">
+                <img src="../img/lucas.png" alt="Logo de lucas">
+              </div>
+            
+              <div class="nav-menu">
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li>Blog</li>
+                  <li>Services</li>
+                  <li>Demo</li>
+                  <li>About</li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <main>
+            <section class="info">
+                <div class="container-cards">
+                    <div class="card">
+                        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h4><b>John Doe</b></h4> 
+                          <p>Architect & Engineer</p> 
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h4><b>John Doe</b></h4> 
+                          <p>Architect & Engineer</p> 
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h4><b>John Doe</b></h4> 
+                          <p>Architect & Engineer</p> 
+                        </div>
+                      </div>
+                </div>
+                <div class="container-banner">
+                    <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+                    <div class="top-left">Top Left</div>
+                </div>
+            </section>
+          </main>
+          <!-- Footer -->
+          <footer class="footer">
+              <div class="footer-title">
+                <img src="../img/lucas.png" alt="Logo de lucas">
+              </div>
+              <div class="footer-social">
+                  <a href="#"><img src="../img/icon/icons8-youtube-play.svg" alt="enlaces a You Tube"></a>
+                  <a href="#"><img src="../img/icon/icons8-facebook.svg" alt="enlaces a Facebook"></a>
+                  <a href="#"><img src="../img/icon/icons8-linkedin.svg" alt="enlaces a Linken In"></a>
+                  <a href="#"><img src="../img/icon/icons8-instagram-20.svg" alt="enlaces a Intagram"></a>
+              </div>
+          </footer>
+          <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+                }
+                
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+            </script>
+    </body>
+</html>

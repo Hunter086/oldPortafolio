@@ -1,0 +1,11 @@
+table{
+    background: #55698a;
+    margin-left: 10%;
+    width: 80%;
+}
+td a{
+    color: #2f5186;
+}
+#Doc4{
+    overflow-x:auto;
+}
