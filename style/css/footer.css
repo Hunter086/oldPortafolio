@@ -5,7 +5,9 @@
     --text-link-hover: #939597;
 }
 .footer{
-    background-color: var(--background-footer);
+    background: linear-gradient(-60deg, #ee9052, #e73c7e, #2458af, #3880fc);
+    background-size: 200% 50%;
+    animation: gradient 15s ease infinite;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -50,3 +52,15 @@
  
  /* Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (min-width: 1200px) {} 
+
+ @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

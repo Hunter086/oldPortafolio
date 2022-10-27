@@ -19,6 +19,7 @@ main .news article{
     background-color: rgba(0, 0, 0, 0.3);
     padding: 10px;/* Arriba | Derecha | Abajo | Izquierda */
     text-align: justify;
+    width: 50%;
 }
 main .news article h1{
     text-align: center;
