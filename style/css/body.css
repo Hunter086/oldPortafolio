@@ -9,6 +9,12 @@
     --text-color-header: rgb(247, 202, 201);
     --background-navbar: #2458af;
     --background-title: rgb(146, 168, 209);
+    --navbar-1: rgb(14, 70, 117);
+    --navbar-2: rgb(154, 225, 212);
+    --navbar-3: rgb(255, 150, 144);
+    --navbar-4: rgb(249, 84, 91);
+    --navbar-2-opacity: rgba(154, 225, 212, 0.774);
+
 }
 body::-webkit-scrollbar, html::-webkit-scrollbar{
 
@@ -27,6 +33,30 @@ body {
     margin: 0;
     padding: 0;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--navbar-2-opacity);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content, #dropdown:target{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    width: 100vw;
+    margin-top: 3vh;
+    left: 0;
+    clip-path: polygon(0 100%, 100% 100%, 100% 4%, 93% 4%, 93% 0, 83% 4%, 0 4%);
+  }
 .markwater{
     position: fixed;
     right: 0;
@@ -56,7 +86,7 @@ body {
 /*titles*/
 .banner-text h2{
     font-family: helvetica, arial;
-    background: #57bdaf;
+    background: var(--navbar-2);
     display: inline-block;
     padding: 10px 20px;
     font-size: 2rem;
@@ -72,7 +102,7 @@ body {
     content: ' ';
     width: 0;
     height: 0;
-    border-right: 20px solid #57bdaf;
+    border-right: 20px solid var(--navbar-2);;
     border-top: 60px solid transparent;
     border-bottom: 0px solid transparent;
     position: absolute;
@@ -83,7 +113,7 @@ body {
     content: ' ';
     width: 0;
     height: 0;
-    border-left: 20px solid #57bdaf;
+    border-left: 20px solid var(--navbar-2);;
     border-top: 0px solid transparent;
     border-bottom: 60px solid transparent;
     position: absolute;
@@ -96,7 +126,7 @@ body {
 .banner-text h1{
     font-family: 'Raleway', Arial, sans-serif;
     color: #ffffff;
-    background: #4f8eb8;
+    background: var(--navbar-1);
     text-align: center;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -113,7 +143,7 @@ body {
     content: ' ';
     width: 0;
     height: 0;
-    border-right: 20px solid #4f8eb8;
+    border-right: 20px solid var(--navbar-1);
     border-top: 0px solid transparent;
     border-bottom: 60px solid transparent;
     position: absolute;
@@ -124,7 +154,7 @@ body {
     content: ' ';
     width: 0;
     height: 0;
-    border-left: 20px solid #4f8eb8;
+    border-left: 20px solid var(--navbar-1);
     border-top: 60px solid transparent;
     border-bottom: 0px solid transparent;
     position: absolute;
@@ -214,8 +244,8 @@ body {
   font-size: 1rem;
 }
 .footer{
-    background: linear-gradient(-60deg, #ee9052, #e73c7e, #2458af, #3880fc);
-    background-size: 200% 50%;
+    background: linear-gradient(-60deg, var(--navbar-1), var(--navbar-2), var(--navbar-3), var(--navbar-4));
+    background-size: 200% 20%;
     animation: gradient 15s ease infinite;
     position: relative;
     display: flex;
@@ -226,6 +256,7 @@ body {
 }
 .footer .footer-title img{
     width: 20%;
+    padding: 0 20px;
 }
 .footer .footer-title{
     width: 60%;
@@ -234,28 +265,18 @@ body {
     width: 40%;
     text-align: right;
 }
-.footer .footer-social img,a{
+.footer .footer-social img, .footer .footer-social a{
     width: 10%;
 }
 
- @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+
  /*header*/
 .header{
     position: fixed;
     top:0;
     left: 0;
     width: 100%;
-    height: 2vh;
+    height: 4vh;
     z-index: 5;
 }
 .header-body{
@@ -264,8 +285,8 @@ body {
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    background: linear-gradient(-60deg, #ee7752, #e73c7e, #305fb1, #4d8dfc);
-    background-size: 200% 200%;
+    background: linear-gradient(60deg, var(--navbar-1), var(--navbar-2), var(--navbar-3), var(--navbar-4));
+    background-size: 200% 20%;
     animation: gradient 15s ease infinite;
 }
 .header-body a{
@@ -384,7 +405,7 @@ main .news{
     font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
     font-weight:100;
     color: aliceblue; 
-    background: url('../../img/plant.jpg') no-repeat;
+    background: var(--text-color-footer);
     background-position: -5rem -25rem;
     background-size: 110% 900px;
     display: flex;
@@ -439,60 +460,68 @@ main .bannner-article .text-block {
 /*navbar*/
 
 .nav{
-    background: linear-gradient(60deg, #ec7f5e, #e64280, #2458af, #3880fc);
-    background-size: 200% 200%;
+    position: fixed;
+    background: linear-gradient(-60deg, var(--navbar-1), var(--navbar-2), var(--navbar-3), var(--navbar-4));
+    background-size: 200% 20%;
     animation: gradient 15s ease infinite;
     width: 100%;
-    height: 8vh;
+    height: 12vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 3;
 }
 .poligon{
-    background: linear-gradient(-60deg, #ee9052, #e73c7e, #2458af, #3880fc);
-    background-size: 200% 50%;
+    position: fixed;
+    background: linear-gradient(60deg, var(--navbar-1), var(--navbar-2), var(--navbar-3), var(--navbar-4));
+    background-size: 200% 20%;
     animation: gradient 15s ease infinite;
     width: 100%;
-    height: 10vh;
-    clip-path: ellipse(70% 20% at 80% -5%);
+    height: 5vh;
+    margin-top: 12vh;
+    clip-path: ellipse(90% 28% at 90% -10%);
+
 }
 .nav-title{
-    background: var(--background-title);
     margin: 0px 0px 0px 0px;
     text-align: center;
 
 }
 .nav-title img{
     width: 40%;
-
 }
 .nav-menu ul{
-    margin: 0px 16px 0px 0px;
+
 }
 
 .nav-menu ul{
     display: flex;
-
+    align-items: center;
+    padding: 0 50px;
 }
-
 .nav-menu ul li{
-    padding: 10px 20px;
-    color: #ccc;
-    font-size: 20px;
-    list-style-type: none;
-    cursor: pointer;
+    list-style: none;
+    padding: 0 25px;
+}
+.nav-menu ul li a{
+    
+}
+.circle{
+    padding: 5px;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    background: linear-gradient(-45deg, var(--navbar-1), var(--navbar-2), var(--navbar-3), var(--navbar-4));
+    background-size: 400% 200%;
+    animation: gradient 15s ease infinite;
 }
 
-.nav-menu ul li a{
-    text-decoration: none;
-    color: #ccc;
+.nav-menu ul li img{
+    width: 40px;
+    transform: scale(1);
 }
-.nav-menu ul li a:hover{
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.4rem;
+.nav-menu ul li .icon-menu:hover{
+    transform: scale(1.5);
 }
 /*tables*/
 table{
@@ -525,6 +554,57 @@ table>thead>tr>th {
     overflow-x:auto;
     margin-bottom: 5%;
 }
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*Flip card*/
+.flip-card {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    padding: 50px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .banner{
@@ -614,14 +694,17 @@ table>thead>tr>th {
         padding: 0px 10px;
     }
     
-    .nav-menu ul li a{
+    .nav-menu ul li .link-menu{
         text-decoration: none;
         color: #ccc;
     }
-    .nav-menu ul li a:hover{
+    .nav-menu ul li .link-menu:hover{
         color: #fff;
         font-weight: bold;
         font-size: 1rem;
+    }
+    .news{
+        
     }
 }
 
