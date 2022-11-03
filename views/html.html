@@ -17,51 +17,93 @@
       </head>
     <body>
       <!--HEADER-->
-        <header class="header">
-          <div class="header-body">
-            <div class="header-contacto">
-              <span>
-                <a href="#">Contacto</a>
-              </span>
-            </div>
-            <div class="header-social">
-                <span><img src="../img/icon/circle.svg" alt="imagen circulo"></span>
-                <a href="#"><img src="../img/icon/icons8-youtube-play.svg"  alt="enlaces a You Tube"></a>
-                <a href="#"><img src="../img/icon/icons8-facebook.svg" alt="enlaces a Facebook"></a>
-                <a href="#"><img src="../img/icon/icons8-linkedin.svg" alt="enlaces a Linken In"></a>
-                <a href="#"><img src="../img/icon/icons8-instagram-20.svg" alt="enlaces a Intagram"></a>
-                <span><img src="../img/icon/circle.svg" alt="imagen circulo"></span>
-            </div>
-            <div class="header-traduction">
-              <span>
-                <a href="#">En</a>
-              </span>
-              <span>
-                |
-              </span>
-              <span>
-                <a href="#">Es</a>
-              </span>
-            </div>
+       <!--HEADER-->
+       <header class="header">
+        <div class="header-body">
+          <div class="header-contacto">
+            <span>
+              <a href="#">Contacto</a>
+            </span>
           </div>
-            <!--NAVBAR-->
-            <nav class="nav">
-              <div class="nav-title">
-                <img src="../img/lucas.png" alt="Logo de lucas">
-              </div>
-            
-              <div class="nav-menu">
-                <ul>
-                  <li><a href="../index.html">Inicio</a></li>
-                  <li><a href="../views/html.html">Doc. Html</a></li>
-                  <li><a href="../views/css.html">Doc. Css</a></li>
-                  <li>Demo</li>
-                  <li>About</li>
-                </ul>
-              </div>
-            </nav>
-            <div class="poligon"></div>
-          </header>
+          <div class="header-social">
+              <span><img src="../img/icon/circle.svg" alt="imagen circulo"></span>
+              <a href="#"><img src="../img/icon/icons8-youtube-play.svg"  alt="enlaces a You Tube"></a>
+              <a href="#"><img src="../img/icon/icons8-facebook.svg" alt="enlaces a Facebook"></a>
+              <a href="#"><img src="../img/icon/icons8-linkedin.svg" alt="enlaces a Linken In"></a>
+              <a href="#"><img src="../img/icon/icons8-instagram-20.svg" alt="enlaces a Intagram"></a>
+              <span><img src="../img/icon/circle.svg" alt="imagen circulo"></span>
+          </div>
+          <div class="header-traduction">
+            <span>
+              <a href="#">En</a>
+            </span>
+            <span>
+              |
+            </span>
+            <span>
+              <a href="#">Es</a>
+            </span>
+          </div>
+        </div>
+        <!--NAVBAR-->
+        <div class="poligon"></div>
+        <nav class="nav">
+          <div class="nav-title">
+            <img src="../img/lucas.png" alt="Logo de lucas">
+          </div>
+        
+          <div class="nav-menu">
+            <ul>
+              <li><a class="link-menu" href="../index.html"><img class= "circle" src="../img/icon/home.svg" alt="icon home"></a>
+              </li>
+              <li class="dropdown">
+                <button id="myBtnDocument">
+                  <img class= "icon-menu circle" src="../img/icon/document.svg" alt="icon home">
+                </button>
+                <!-- The Modal -->
+                  <div id="myModalDocument" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <div class="box-modal flex justify-content-space-around">
+                        <a href="../views/html.html">
+                          <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="../img/html.png" alt="icon html" style="width:300px;height:300px;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>HyperText Markup Language</h1> 
+                                <p>It defines the meaning and structure of web content.</p> 
+                                <p>Hypertext" refers to links that connect web pages to one another, either within a single website or between websites.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="../views/html.html">
+                          <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="../img/Elchalten.jpg" alt="icon html" style="width:300px;height:300px;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Example</h1> 
+                                <p>Example</p> 
+                                <p>Example</p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+              </li>
+              <li><a class="link-menu" href="../views/css.html"><img class= "circle" src="../img/icon/home.svg" alt="icon home"></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
           <main>
             <section class="info">
                 <div class="tab">
@@ -750,5 +792,32 @@
                 // Get the element with id="defaultOpen" and click on it
                 document.getElementById("defaultOpen").click();
             </script>
+                      <script>
+                        // Get the modal
+                      var modal = document.getElementById("myModalDocument");
+                      
+                      // Get the button that opens the modal
+                      var btn = document.getElementById("myBtnDocument");
+                      
+                      // Get the <span> element that closes the modal
+                      var span = document.getElementsByClassName("close")[0];
+                      
+                      // When the user clicks on the button, open the modal
+                      btn.onclick = function() {
+                        modal.style.display = "block";
+                      }
+                      
+                      // When the user clicks on <span> (x), close the modal
+                      span.onclick = function() {
+                        modal.style.display = "none";
+                      }
+                      
+                      // When the user clicks anywhere outside of the modal, close it
+                      window.onclick = function(event) {
+                        if (event.target == modal) {
+                          modal.style.display = "none";
+                        }
+                      } 
+                      </script>
     </body>
 </html>
