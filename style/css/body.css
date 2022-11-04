@@ -3,12 +3,13 @@
 :root{
     --background-footer: #34568B;
     --text-color-footer: rgb(247, 202, 201);
-    --text-link-link: #d1d4d6;
-    --text-link-hover: #939597;
+    --text-link-link: rgb(74, 97, 116);
+    --text-link-hover: rgb(61, 92, 117);
     --background-header: #34568B;
     --text-color-header: rgb(247, 202, 201);
     --background-navbar: #2458af;
     --background-title: rgb(146, 168, 209);
+    --background-color-info: #1d2a35;
     --navbar-1: rgb(14, 70, 117);
     --navbar-2: rgb(154, 225, 212);
     --navbar-3: rgb(255, 150, 144);
@@ -35,17 +36,16 @@ body {
 }
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 14vh; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none;
+    position: absolute;
+    padding: 14vh 0 0 0;
+    width: 100vw;
+    height: 86vh;
+    left: 0;
+    top: 0;
+    z-index: 1;
   }
   
   /* Modal Content */
@@ -280,14 +280,14 @@ body {
     padding: 0 20px;
 }
 .footer .footer-title{
-    width: 60%;
+    width: 40%;
 }
 .footer .footer-social{
-    width: 40%;
+    width: 60%;
     text-align: right;
 }
 .footer .footer-social img, .footer .footer-social a{
-    width: 30px;
+    width: 50px;
 }
 
 
@@ -350,74 +350,9 @@ body {
     box-sizing: border-box;
 }
 .info{
-    margin-top: 10vh;
-}
-/* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid rgb(230, 230, 230);
-  background-color: rgb(57, 83, 105);
-  width: 15%;
-  height: 80vh;
+    margin-top: 14vh;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: justify;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-}
-.tab span {
-  
-  margin-left: 1.75rem;
-
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: rgb(221, 221, 221);
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  /*border: 1px solid #ccc;*/
-  width: 85%;
-  border-left: none;
-  height: auto;
-}
-.tabcontent #title{
-    font-size: 2rem;
-    color: #ddd;
-    text-align: center;
-}
-.tabcontent #subtitle{
-    font-size: 2.2rem;
-    color: rgba(229, 75, 33, 0.705);
-    text-align: justify;
-}
-.tabcontent p{
-    font-size: 1.2rem;
-    color: #ddd;
-}
-.tabcontent pre{
-  font-size: 1.2rem;
-  color: #ddd;
-}
 /*Main*/
 main{
     background-color: rgb(190, 190, 190);
@@ -441,6 +376,10 @@ main .news article{
     padding: 10px;/* Arriba | Derecha | Abajo | Izquierda */
     text-align: justify;
     width: 50%;
+    align-items: center;
+}
+main .news article p{
+    padding: 0 20px;
 }
 main .news article h1{
     text-align: center;
@@ -452,8 +391,6 @@ main .news article h1{
 }
 main .news article #art-obj{
     display: inline;
-    align-items: center;
-    margin-left: 16%;
     text-transform: uppercase;
     font-size: 1.8rem;
 }
@@ -528,12 +465,9 @@ main .bannner-article .text-block {
     cursor:pointer;
     background: none;
     border: 0;
-    color: inherit;
     /* cursor: default; */
-    font: inherit;
     line-height: normal;
     overflow: visible;
-    padding: 0;
 }
 .circle{
     padding: 5px;
@@ -634,6 +568,64 @@ table>thead>tr>th {
     color: white;
     transform: rotateY(180deg);
   }
+  /* Style the tab */
+.tab {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+      color: var(--text-link-link);
+      padding: 20px 10px;
+      margin: 5px 0;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 2rem;
+  }
+  .tab span {
+    
+
+  
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: var(--navbar-2-opacity);
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: var(--navbar-3);
+  }
+  .tabcontent{
+    padding: 20px;
+    background-color: var(--background-color-info);
+  }
+  .tabcontent h1{
+   text-align: center;
+   font-size: 2rem;
+   color: var(--navbar-3);
+  }
+  .tabcontent h2{
+    text-align: justify;
+    font-size: 1.4rem;
+    color: aliceblue;
+   }
+   .tabcontent p, pre, li{
+    color: aliceblue;
+   }
+   hr {
+    border: 1px solid #38444d;
+    margin: 20px -16px;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+  }
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .banner{
@@ -657,7 +649,7 @@ table>thead>tr>th {
         margin-bottom: 5px;
     }
     .banner-text h2:before{
-        border-top: 34px solid transparent;
+        border-top: 35px solid transparent;
      }
      .banner-text h2:after{
         border-bottom: 34px solid transparent;
@@ -735,7 +727,6 @@ table>thead>tr>th {
     }
     .modal-content .box-modal {
         flex-direction: column;
-        margin-bottom: 14vh;
       }
 }
 
