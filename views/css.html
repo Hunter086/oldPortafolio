@@ -3,7 +3,7 @@
     <head>
         <title>Diseño Web</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Hola soy Lucas, creador de la web.Este espacio fue creador para documentar y 
         publicar contenido sobre el desarrollo de un Sitio Web. Su objetivo es ser un espacio colaborativo
       y de apredisaje.">
@@ -17,92 +17,747 @@
       </head>
     <body>
       <!--HEADER-->
-        <header class="header">
-          <div class="header-body">
-            <div class="header-contacto">
-              <span>
-                <a href="#">Contacto</a>
-              </span>
-            </div>
-            <div class="header-social">
-                <span><img src="../img/icon/circle.svg" alt="imagen circulo"></span>
-                <a href="#"><img src="../img/icon/icons8-youtube-play.svg"  alt="enlaces a You Tube"></a>
-                <a href="#"><img src="../img/icon/icons8-facebook.svg" alt="enlaces a Facebook"></a>
-                <a href="#"><img src="../img/icon/icons8-linkedin.svg" alt="enlaces a Linken In"></a>
-                <a href="#"><img src="../img/icon/icons8-instagram-20.svg" alt="enlaces a Intagram"></a>
-                <span><img src="../img/icon/circle.svg" alt="imagen circulo"></span>
-            </div>
-            <div class="header-traduction">
-              <span>
-                <a href="#">En</a>
-              </span>
-              <span>
-                |
-              </span>
-              <span>
-                <a href="#">Es</a>
-              </span>
-            </div>
+       <!--HEADER-->
+       <header class="header">
+        <div class="header-body">
+          <div class="header-contacto">
+            <span>
+              <a href="#">Contacto</a>
+            </span>
           </div>
-            <!--NAVBAR-->
-            <nav class="nav">
-              <div class="nav-title">
-                <img src="../img/lucas.png" alt="Logo de lucas">
-              </div>
-            
-              <div class="nav-menu">
-                <ul>
-                  <li><a href="../index.html">Inicio</a></li>
-                  <li><a href="../views/html.html">Doc. Html</a></li>
-                  <li><a href="../views/css.html">Doc. Css</a></li>
-                  <li>Demo</li>
-                  <li>About</li>
-                </ul>
-              </div>
-            </nav>
-            <div class="poligon"></div>
-          </header>
+          <div class="header-social">
+            <span><img src="../img/icon/circle.svg" alt="imagen circulo"></span>
+            <a href="#"><img src="../img/icon/icons8-youtube-play.svg"  alt="enlaces a You Tube"></a>
+            <a href="#"><img src="../img/icon/icons8-facebook.svg" alt="enlaces a Facebook"></a>
+            <a href="https://www.linkedin.com/in/lucas-bauducco-804604237/" target="_blank"><img src="../img/icon/icons8-linkedin.svg" alt="enlaces a Linken In"></a>
+            <a href="#"><img src="../img/icon/icons8-instagram-20.svg" alt="enlaces a Intagram"></a>
+            <span><img src="../img/icon/circle.svg" alt="imagen circulo"></span>
+          </div>
+          <div class="header-traduction">
+            <span>
+              <a href="#">En</a>
+            </span>
+            <span>
+              |
+            </span>
+            <span>
+              <a href="#">Es</a>
+            </span>
+          </div>
+        </div>
+        <!--NAVBAR-->
+        <div class="poligon"></div>
+        <nav class="nav">
+          <div class="nav-title">
+            <img src="../img/lucas.png" alt="Logo de lucas">
+          </div>
+        
+          <div class="nav-menu">
+            <ul>
+              <li><a class="link-menu" href="../index.html"><img class= "icon-menu circle" src="../img/icon/home.svg" alt="icon home"></a>
+              </li>
+              <li class="dropdown">
+                <button id="myBtnDocument">
+                 <img class= "icon-menu circle" src="../img/icon/document.svg" alt="icon home">
+                </button>
+                <!-- The Modal -->
+                  <div id="myModalDocument" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <div class="box-modal">
+                        <div class="tab">
+                          <button class="tablinks" onclick="openCity(event, 'Doc1')" id="defaultOpen">Introducción CSS</button>
+                          <button class="tablinks" onclick="openCity(event, 'Doc2')">Example</button>
+                          <button class="tablinks" onclick="openCity(event, 'Doc3')">Example</button>
+                          <button class="tablinks" onclick="openCity(event, 'Doc4')"><span>Example</span></button>
+      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </li>
+              <li><a class="link-menu" href="../views/css.html"><img class= "circle" src="../img/icon/home.svg" alt="icon home"></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
           <main>
+            
             <section class="info">
-                <div class="container-cards">
-                    <div class="card">
-                        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-                        <div class="container">
-                          <h4><b>John Doe</b></h4> 
-                          <p>Architect & Engineer</p> 
-                        </div>
-                      </div>
-                      <div class="card">
-                        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-                        <div class="container">
-                          <h4><b>John Doe</b></h4> 
-                          <p>Architect & Engineer</p> 
-                        </div>
-                      </div>
-                      <div class="card">
-                        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-                        <div class="container">
-                          <h4><b>John Doe</b></h4> 
-                          <p>Architect & Engineer</p> 
-                        </div>
-                      </div>
+                
+                <div id="Doc1" class="tabcontent">
+                    <h1 id="title">CSS <span>Introducción</span></h1>
+                    <hr>
+                    <h2 id="subtitle">Hojas de Estilo en Cascada(Cascading Style Sheets)</h2>
+                    <hr>
+                    <p>Como HTML, CSS (Cascading Style Sheets) u Hojas de estilo en cascada en español, no es realmente un lenguaje de programación, tampoco es un lenguaje de marcado. Es un lenguaje de hojas de estilo, es decir, te permite aplicar estilos de manera selectiva a elementos en documentos HTML.</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <hr>
+                    <h2>¿Qué es Css?</h2>
+                    <ul>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <hr>
+                    <h2></h2>
+<pre class="code">
+  
+</pre>
+<hr>
+
                 </div>
-                <div class="container-banner">
-                    <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
-                    <div class="top-left">Top Left</div>
+                
+                <div id="Doc2" class="tabcontent">
+                    <h3 id="title">Estructura HTML</h3>
+                    <h4 id="subtitle">Esqueleto</h4>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Mi pagina de prueba&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;img src="img/icon.png" alt="descrip"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
                 </div>
+                
+                <div id="Doc3" class="tabcontent">
+                    <h3 id="title">Elementos</h3>
+                    <h4 id="subtitle">Definición y uso</h4>
+                    <p>Todos los documentos HTML deben comenzar con una declaración del tipo  &lt;!DOCTYPE&gt;.
+                      Esta  declaración no es una etiqueta HTML. Es información para que el navegador interprete sobre que tipo de documento espera.</p>
+                      <p>Para HTML 5, su declaración es:</p>
+                      <p>&lt;!DOCTYPE html&gt;</p>
+                      <p>La etiqueta &lt;html&gt; representa la raíz de un documento HTML. La etiqueta html es el contenedor raiz del todos los elementos HTML(sin incluir &lt;!DOCTYPE&gt;)</p>
+                        <p>Para definir la etiqueta html es una buena practica incluir el atributo lang, para declarar el idioma de la página web.</p>
+                        <p>&lt;html lang="es"&gt; &lt;/html&gt;</p>
+                      <p>El &lt;head&gt;  es un contenedor de metadatos y se coloca entre la etiqueta &lt;html&gt; y la etiqueta &lt;body&gt;. Estos metadatos son datos relacionados al documento HTML 
+                        y no se muestran al usuario.</p>
+                      <p>Los sigientes elementos pertenecen al &lt;head&gt;</p>
+                      <pre>
+                        &lt;style&gt;
+                        &lt;title&gt;
+                        &lt;base&gt;
+                        &lt;meta&gt;
+                        &lt;script&gt;
+                        &lt;link&gt;
+                        &lt;noscript&gt;
+                      </pre>
+                      <p>El elemento &lt;body&gt; define el cuerpo del documento html. Este elemento contiene todo el contenido 
+                        HTML(encabezados, párrafos, titulos, imagenes, links, etc).</p>
+                      <p>Solo puede existir un &lt;body&gt; en todo el documento.</p>
+                      <p>&lt;body&gt; &lt;/body&gt;</p>
+                    </div>
+                    <div id="Doc4" class="tabcontent">
+                      <h3 id="title">Elementos por Categoría</h3>
+                      <h4 id="subtitle">Basico HTML</h4>
+                      <table class="ws-table-all notranslate" id="table-element">
+                        <tr>
+                        <th style="width:20%">Tag</th>
+                        <th>Descripción</th>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;!DOCTYPE&gt;</a>&nbsp;</td>
+                        <td>Define el tipo de documento</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;html&gt;</a></td>
+                        <td>Define un documento HTML</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;head&gt;</a></td>
+                        <td>Contiene metadatos/información para el documento</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;title&gt;</a></td>
+                        <td>Defines a title for the document</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;body&gt;</a></td>
+                        <td>Defines the document's body</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;h1&gt; to &lt;h6&gt;</a></td>
+                        <td> Defines HTML headings</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;p&gt;</a></td>
+                        <td>Defines a paragraph</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;br&gt;</a></td>
+                        <td>Inserts a single line break</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;hr&gt;</a></td>
+                        <td> Defines a thematic change in the content</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;!--...--&gt;</a></td>
+                        <td>Defines a comment</td>
+                        </tr>
+                      </table>
+
+                      <h4 id="subtitle">Formato</h4>
+                      <table class="ws-table-all notranslate" id="table-element">
+                        <tr>
+                        <th style="width:20%">Tag</th>
+                        <th>Descripción</th>
+                        </tr>
+                        <tr>
+                        <td><a class="notsupported" href="#">&lt;acronym&gt;</a></td>
+                        <td><span class="deprecated">Not supported in HTML5. Use &lt;abbr&gt; instead.<br></span>Defines an acronym</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;abbr&gt;</a></td>
+                        <td>Defines an abbreviation or an acronym</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;address&gt;</a></td>
+                        <td>Defines contact information for the author/owner of a document/article</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;b&gt;</a></td>
+                        <td>Defines bold text</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;bdi&gt;</a></td>
+                        <td>Isolates a part of text that might be formatted in a different direction 
+                        from other text outside it</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;bdo&gt;</a></td>
+                        <td>Overrides the current text direction</td>
+                        </tr>
+                        <tr>
+                        <td><a class="notsupported" href="#">&lt;big&gt;</a></td>
+                        <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines big text</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;blockquote&gt;</a></td>
+                        <td>Defines a section that is quoted from another source</td>
+                        </tr>
+                        <tr>
+                        <td><a class="notsupported" href="#">&lt;center&gt;</a></td>
+                        <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines centered text</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;cite&gt;</a></td>
+                        <td>Defines the title of a work</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;code&gt;</a></td>
+                        <td>Defines a piece of computer code</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;del&gt;</a></td>
+                        <td>Defines text that has been deleted from a document</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;dfn&gt;</a></td>
+                        <td>Specifies a term that is going to be defined within the content</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;em&gt;</a></td>
+                        <td>Defines emphasized text&nbsp;</td>
+                        </tr>
+                        <tr>
+                        <td><a class="notsupported" href="#">&lt;font&gt;</a></td>
+                        <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines font, color, and size for text</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;i&gt;</a></td>
+                        <td>Defines a part of text in an alternate voice or mood</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;ins&gt;</a></td>
+                        <td>Defines a text that has been inserted into a document</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;kbd&gt;</a></td>
+                        <td>Defines keyboard input</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;mark&gt;</a></td>
+                        <td>Defines marked/highlighted text</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;meter&gt;</a></td>
+                        <td>Defines a scalar measurement within a known range (a gauge)</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;pre&gt;</a></td>
+                        <td>Defines preformatted text</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;progress&gt;</a></td>
+                        <td>Represents the progress of a task</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;q&gt;</a></td>
+                        <td>Defines a short quotation</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;rp&gt;</a></td>
+                        <td>Defines what to show in browsers that do not support ruby annotations</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;rt&gt;</a></td>
+                        <td>Defines an explanation/pronunciation of characters (for East Asian 
+                        typography)</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;ruby&gt;</a></td>
+                        <td>Defines a ruby annotation (for East Asian typography)</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;s&gt;</a></td>
+                        <td>Defines text that is no longer correct</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;samp&gt;</a></td>
+                        <td>Defines sample output from a computer program</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;small&gt;</a></td>
+                        <td>Defines smaller text</td>
+                        </tr>
+                        <tr>
+                        <td><a class="notsupported" href="#">&lt;strike&gt;</a></td>
+                        <td><span class="deprecated">Not supported in HTML5. Use &lt;del&gt; or &lt;s&gt; instead.<br></span>Defines strikethrough text</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;strong&gt;</a></td>
+                        <td>Defines important text</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;sub&gt;</a></td>
+                        <td>Defines subscripted text</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;sup&gt;</a></td>
+                        <td>Defines superscripted text</td>
+                        </tr>
+                          <tr>
+                        <td><a href="#">&lt;template&gt;</a></td>
+                        <td>Defines a container for content that should be hidden when the page loads</td>
+                          </tr>
+                        <tr>
+                        <td><a href="#">&lt;time&gt;</a></td>
+                        <td>Defines a specific time (or datetime)</td>
+                        </tr>
+                        <tr>
+                        <td><a class="notsupported" href="#">&lt;tt&gt;</a></td>
+                        <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines teletype text</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;u&gt;</a></td>
+                        <td>Defines some text that is unarticulated and styled differently from normal 
+                        text</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;var&gt;</a></td>
+                        <td>Defines a variable</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;wbr&gt;</a></td>
+                        <td>Defines a possible line-break</td>
+                        </tr>
+                      </table>
+                      <hr>
+                      <h4 id="subtitle">Formularios</h4>
+                      <table class="ws-table-all notranslate">
+                        <tr>
+                        <th style="width:20%">Tag</th>
+                        <th>Description</th>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;form&gt;</a></td>
+                        <td>Defines an HTML form for user input</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;input&gt;</a></td>
+                        <td>Defines an input control</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;textarea&gt;</a></td>
+                        <td>Defines a multiline input control (text area)</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;button&gt;</a></td>
+                        <td>Defines a clickable button</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;select&gt;</a></td>
+                        <td>Defines a drop-down list</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;optgroup&gt;</a></td>
+                        <td>Defines a group of related options in a drop-down list</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;option&gt;</a></td>
+                        <td>Defines an option in a drop-down list</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;label&gt;</a></td>
+                        <td>Defines a label&nbsp;for an &lt;input&gt; element</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;fieldset&gt;</a></td>
+                        <td>Groups related elements in a form</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;legend&gt;</a></td>
+                        <td>Defines a caption for a &lt;fieldset&gt; element</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;datalist&gt;</a></td>
+                        <td>Specifies a list of pre-defined options for input controls</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;output&gt;</a></td>
+                        <td>Defines the result of a calculation</td>
+                        </tr>
+                      </table>
+
+                      <h4 id="subtitle">Marcos</h4>
+                      <table class="ws-table-all notranslate">
+                        <tr>
+                        <th style="width:20%">Tag</th>
+                        <th>Description</th>
+                        </tr>
+                        <tr>
+                        <td><a class="notsupported" href="#">&lt;frame&gt;</a></td>
+                        <td> <span class="deprecated">Not supported in HTML5.<br></span>Defines a window (a frame) in a frameset</td>
+                        </tr>
+                        <tr>
+                        <td><a class="notsupported" href="#">&lt;frameset&gt;</a></td>
+                        <td><span class="deprecated">Not supported in HTML5.<br></span>Defines a set of frames</td>
+                        </tr>
+                        <tr>
+                        <td><a class="notsupported" href="#">&lt;noframes&gt;</a></td>
+                        <td><span class="deprecated">Not supported in HTML5.<br></span>Defines an alternate content for users that do not support 
+                        frames</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;iframe&gt;</a></td>
+                        <td>Defines an inline frame</td>
+                        </tr>
+                        </table>
+
+                        <h4 id="subtitle">Imagenes</h4>
+                        <table class="ws-table-all notranslate">
+                          <tr>
+                          <th style="width:20%">Tag</th>
+                          <th>Description</th>
+                          </tr>
+                          <tr>
+                          <td><a href="#">&lt;img&gt;</a></td>
+                          <td>Defines an image</td>
+                          </tr>
+                          <tr>
+                          <td><a href="#">&lt;map&gt;</a></td>
+                          <td>Defines a client-side image map </td>
+                          </tr>
+                          <tr>
+                          <td><a href="#">&lt;area&gt;</a></td>
+                          <td>Defines an area inside an image map</td>
+                          </tr>
+                          <tr>
+                          <td><a href="#">&lt;canvas&gt;</a></td>
+                          <td>Used to draw graphics, on the fly, via scripting (usually JavaScript)</td>
+                          </tr>
+                          <tr>
+                          <td><a href="#">&lt;figcaption&gt;</a></td>
+                          <td>Defines a caption for a &lt;figure&gt; element</td>
+                          </tr>
+                          <tr>
+                          <td><a href="#">&lt;figure&gt;</a></td>
+                          <td>Specifies self-contained content</td>
+                          </tr>
+                          <tr>
+                          <td><a href="#">&lt;picture&gt;</a></td>
+                          <td>Defines a container for multiple image resources</td>
+                          </tr>
+                          <tr>
+                          <td><a href="#">&lt;svg&gt;</a></td>
+                          <td>Defines a container for SVG graphics</td>
+                          </tr>
+                        </table>
+
+                      <h4 id="subtitle">Audio / Video</h4>
+                      <table class="ws-table-all notranslate">
+                        <tr>
+                        <th style="width:20%">Tag</th>
+                        <th>Description</th>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;audio&gt;</a></td>
+                        <td>Defines sound content</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;source&gt;</a></td>
+                        <td>Defines multiple media resources for media elements (&lt;video&gt;, &lt;audio&gt; 
+                        and &lt;picture&gt;)</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;track&gt;</a></td>
+                        <td>Defines text tracks for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;video&gt;</a></td>
+                        <td>Defines a video or movie</td>
+                        </tr>
+                      </table>
+
+                      <h4 id="subtitle">Enlaces</h4>
+                      <table class="ws-table-all notranslate">
+                        <tr>
+                        <th style="width:20%">Tag</th>
+                        <th>Description</th>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;a&gt;</a></td>
+                        <td>Defines a hyperlink</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;link&gt;</a></td>
+                        <td>Defines the relationship between a document and an external resource (most 
+                        used to link to style sheets)</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;nav&gt;</a></td>
+                        <td>Defines navigation links</td>
+                        </tr>
+                      </table>
+
+                      <h4 id="subtitle">Listas</h4>
+                      <table class="ws-table-all notranslate">
+                        <tr>
+                        <th style="width:20%">Tag</th>
+                        <th>Description</th>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;ul&gt;</a></td>
+                        <td>Defines an unordered list</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;ol&gt;</a></td>
+                        <td>Defines an ordered list</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;li&gt;</a></td>
+                        <td>Defines a list item</td>
+                        </tr>
+                        <tr>
+                        <td><a class="notsupported" href="#">&lt;dir&gt;</a></td>
+                        <td><span class="deprecated">Not supported in HTML5. Use &lt;ul&gt; instead.<br></span>Defines a directory list</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;dl&gt;</a></td>
+                        <td>Defines a description list</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;dt&gt;</a></td>
+                        <td>Defines a term/name in a description list</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;dd&gt;</a></td>
+                        <td>Defines a description of a term/name in a description list</td>
+                        </tr>
+                      </table>
+
+                      <h4 id="subtitle">Tablas</h4>
+                      <table class="ws-table-all notranslate">
+                        <tr>
+                        <th style="width:20%">Tag</th>
+                        <th>Description</th>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;table&gt;</a></td>
+                        <td>Defines a table</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;caption&gt;</a></td>
+                        <td>Defines a table caption</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;th&gt;</a></td>
+                        <td>Defines a header cell in a table</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;tr&gt;</a></td>
+                        <td>Defines a row in a table</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;td&gt;</a></td>
+                        <td>Defines a cell in a table</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;thead&gt;</a></td>
+                        <td>Groups the header content in a table</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;tbody&gt;</a></td>
+                        <td>Groups the body content in a table</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;tfoot&gt;</a></td>
+                        <td>Groups the footer content in a table</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;col&gt;</a></td>
+                        <td>Specifies column properties for each column within a &lt;colgroup&gt; element </td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;colgroup&gt;</a></td>
+                        <td>Specifies a group of one or more columns in a table for formatting</td>
+                        </tr>
+                      </table>
+
+                      <h4 id="subtitle">Estilos y Semántica</h4>
+                      <table class="ws-table-all notranslate">
+                        <tr>
+                        <th style="width:20%">Tag</th>
+                        <th>Description</th>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;style&gt;</a></td>
+                        <td>Defines style information for a document</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;div&gt;</a></td>
+                        <td>Defines a section in a document</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;span&gt;</a></td>
+                        <td>Defines a section in a document</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;header&gt;</a></td>
+                        <td>Defines a header for a document or section</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;footer&gt;</a></td>
+                        <td>Defines a footer for a document or section</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;main&gt;</a></td>
+                        <td>Specifies the main content of a document</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;section&gt;</a></td>
+                        <td>Defines a section in a document</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;article&gt;</a></td>
+                        <td>Defines an article</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;aside&gt;</a></td>
+                        <td>Defines content aside from the page content</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;details&gt;</a></td>
+                        <td>Defines additional details that the user can view or hide</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;dialog&gt;</a></td>
+                        <td>Defines a dialog box or window</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;summary&gt;</a></td>
+                        <td>Defines a visible heading for a &lt;details&gt; element</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;data&gt;</a></td>
+                        <td>Adds a machine-readable 
+                        translation of a given content</td>
+                        </tr>
+                      </table>
+
+                      <h4 id="subtitle">Meta Info</h4>
+                      <table class="ws-table-all notranslate">
+                        <tr>
+                        <th style="width:20%">Tag</th>
+                        <th>Description</th>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;head&gt;</a></td>
+                        <td>Defines information about the document</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;meta&gt;</a></td>
+                        <td>Defines metadata about an HTML document</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;base&gt;</a></td>
+                        <td>Specifies the base URL/target for all relative URLs in a document</td>
+                        </tr>
+                        <tr>
+                        <td><a class="notsupported" href="#">&lt;basefont&gt;</a></td>
+                        <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Specifies a default color, size, and font for all text in a document</td>
+                        </tr>
+                      </table>
+
+                      <h4 id="subtitle">Programación</h4>
+                      <table class="ws-table-all notranslate">
+                        <tr>
+                        <th style="width:20%">Tag</th>
+                        <th>Description</th>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;script&gt;</a></td>
+                        <td>Defines a client-side script</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;noscript&gt;</a></td>
+                        <td>Defines an alternate content for users that do not support 
+                        client-side scripts</td>
+                        </tr>
+                        <tr>
+                        <td><a class="notsupported" href="#">&lt;applet&gt;</a></td>
+                        <td><span class="deprecated">Not supported in HTML5. Use &lt;embed&gt; or &lt;object&gt; instead.<br></span>Defines an embedded applet</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;embed&gt;</a></td>
+                        <td>Defines a container for an external (non-HTML) application</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;object&gt;</a></td>
+                        <td>Defines an embedded object</td>
+                        </tr>
+                        <tr>
+                        <td><a href="#">&lt;param&gt;</a></td>
+                        <td>Defines a parameter for an object</td>
+                        </tr>
+                      </table>
+                      
+                      </div>
             </section>
           </main>
           <!-- Footer -->
           <footer class="footer">
               <div class="footer-title">
-                <img src="../img/lucas.png" alt="Logo de lucas">
+                <a href="../index.html"><img src="../img/lucas.png" alt="Logo de lucas"></a>
               </div>
               <div class="footer-social">
-                  <a href="#"><img src="../img/icon/icons8-youtube-play.svg" alt="enlaces a You Tube"></a>
-                  <a href="#"><img src="../img/icon/icons8-facebook.svg" alt="enlaces a Facebook"></a>
-                  <a href="#"><img src="../img/icon/icons8-linkedin.svg" alt="enlaces a Linken In"></a>
-                  <a href="#"><img src="../img/icon/icons8-instagram-20.svg" alt="enlaces a Intagram"></a>
+                <a href="#"><img src="../img/icon/icons8-youtube-play.svg" alt="enlaces a You Tube"></a>
+                <a href="#"><img src="../img/icon/icons8-facebook.svg" alt="enlaces a Facebook"></a>
+                <a href="https://www.linkedin.com/in/lucas-bauducco-804604237/" target="_blank"><img src="../img/icon/icons8-linkedin.svg" alt="enlaces a Linken In"></a>
+                <a href="#"><img src="../img/icon/icons8-instagram-20.svg" alt="enlaces a Intagram"></a>
               </div>
           </footer>
           <script>
@@ -123,5 +778,32 @@
                 // Get the element with id="defaultOpen" and click on it
                 document.getElementById("defaultOpen").click();
             </script>
+                      <script>
+                        // Get the modal
+                      var modal = document.getElementById("myModalDocument");
+                      
+                      // Get the button that opens the modal
+                      var btn = document.getElementById("myBtnDocument");
+                      
+                      // Get the <span> element that closes the modal
+                      var span = document.getElementsByClassName("close")[0];
+                      
+                      // When the user clicks on the button, open the modal
+                      btn.onclick = function() {
+                        modal.style.display = "block";
+                      }
+                      
+                      // When the user clicks on <span> (x), close the modal
+                      span.onclick = function() {
+                        modal.style.display = "none";
+                      }
+                      
+                      // When the user clicks anywhere outside of the modal, close it
+                      window.onclick = function(event) {
+                        if (event.target == modal) {
+                          modal.style.display = "none";
+                        }
+                      } 
+                      </script>
     </body>
 </html>
