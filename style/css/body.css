@@ -375,7 +375,7 @@ main .news article{
     background-color: rgba(0, 0, 0, 0.3);
     padding: 10px;/* Arriba | Derecha | Abajo | Izquierda */
     text-align: justify;
-    width: 50%;
+    width: 30%;
     align-items: center;
 }
 main .news article p{
@@ -395,7 +395,7 @@ main .news article #art-obj{
     font-size: 1.8rem;
 }
 main .news .top-news{
-    width: 40%;
+    width: 60%;
 }
 
 main .news .top-news .img{
