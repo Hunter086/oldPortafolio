@@ -1,0 +1,43 @@
+.profile{
+    display: flex;
+    margin: 100px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.938);
+}
+.profile .img{
+    width: 10%;
+    background-color: black;
+}
+.profile .profile-img img{
+    width: 100%;
+    background-size: contain;
+}
+.profile .info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    padding: 20px 180px;
+    background-image: url('https://images.unsplash.com/photo-1474767821094-a8fe9d8c8fdd?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTA2Njk2NQ&ixlib=rb-1.2.1&q=85');
+    background-size: cover;
+}
+.profile .info .info-profile{
+    display: flex;
+    align-items: center;
+    margin: auto 10px;
+    padding: 20px;
+}
+.profile .info .info-profile span, .profile .info .info-profile a{
+    font-size: 1.2rem;
+    color: aliceblue;
+    text-decoration: none;
+}
+.profile .circle {
+    width: 50px;
+    height: 50px;
+    background: #2c8ec7;
+    border-radius: 50%;
+    margin-right: 15px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+  }
