@@ -479,7 +479,7 @@ main .bannner-article .text-block {
     animation: gradient 15s ease infinite;
 }
 
-.nav-menu ul li img{
+.nav-menu ul li .icon-menu{
     width: 40px;
     transform: scale(1);
 }
@@ -536,6 +536,7 @@ table>thead>tr>th {
     padding: 50px;
   }
   
+  
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -562,6 +563,10 @@ table>thead>tr>th {
     background-color: #bbb;
     color: black;
   }
+  .flip-card-front img{
+    width: 300px;
+    height: 300px;
+}
   
   .flip-card-back {
     background-color: #2980b9;
@@ -702,6 +707,9 @@ table>thead>tr>th {
         margin: 10px 0;
 
     }
+    .nav{
+        justify-content: center;
+    }
     .nav-title{
         display: none;
     }
@@ -728,6 +736,19 @@ table>thead>tr>th {
     .modal-content .box-modal {
         flex-direction: column;
       }
+      .flip-card {
+        width: 100px;
+        height: 100px;
+        perspective: 1000px;
+        padding: 50px 150px;
+      }
+    .flip-card-front img{
+        width: 100px;
+        height: 100px;
+    }
+    .flip-card-back{
+        display: none;
+    }
 }
 
 
